@@ -1,0 +1,21 @@
+<!doctype html>
+
+<body>
+	<div class="main">
+      <h2>My Calculator</h2>
+	  <fieldset>
+		<label>Enter number1:</label>
+		<input type="number" name="num1"[(ngModel)]="num1">
+		<br><br>
+		<label>Enter number2:</label>
+		<input type="number" name="num2"[(ngModel)]="num2">
+		<br><br>
+		<button (click)="add()">add</button>
+		<button (click)="sub()">sub</button>
+		<button (click)="multiply()">mul</button>
+		<button (click)="division()">div</button>
+		<h3><b>Result: {{result}}</b></h3>
+	  </fieldset>
+	  
+	</div>
+</body>
